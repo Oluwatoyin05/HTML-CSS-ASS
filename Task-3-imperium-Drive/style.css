@@ -1,0 +1,595 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+    background-color: #080812;
+    color: white;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #d4af5a;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 650px;
+}
+    .hero {
+    min-height: 650px;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.35),
+        rgba(0, 0, 0, 0.35)
+    ), url("hero-car.jpg.jpg");
+    background-size: cover;
+    background-position: center-;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.hero-subtitle {
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-buttons a {
+    padding: 15px 35px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.btn-primary {
+    background-color: #d4af5a;
+    color: white;
+}
+
+.btn-secondary {
+    border: 1px solid white;
+    color: white;
+}
+
+/* Featured Fleet Section */
+.fleet {
+    padding: 80px 60px;
+    background-color: #ffffff;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading p {
+    color: #b08d46;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+    color: #10101b;
+}
+
+/* Fleet Container */
+.fleet-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* Individual Car Cards */
+.car-card {
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.car-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.car-details {
+    padding: 20px;
+}
+
+.car-category {
+    color: #b08d46;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.car-details h3 {
+    font-size: 17px;
+    margin-bottom: 12px;
+    color: #10101b;
+}
+
+.car-details p {
+    font-size: 13px;
+    color: #777777;
+}
+
+/* Find Your Perfect Drive */
+.find-drive {
+    padding: 80px 60px;
+    background-color: #f8f8f8;
+}
+
+.find-drive .section-heading {
+    margin-bottom: 50px;
+}
+
+.browse-section {
+    margin-bottom: 50px;
+}
+
+.browse-section h3 {
+    font-size: 22px;
+    color: #10101b;
+    margin-bottom: 25px;
+}
+
+/* Browse by Brand */
+.brand-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.brand-card {
+    background-color: white;
+    padding: 25px 15px;
+    text-align: center;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+}
+
+.brand-card img {
+    width: 70px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.brand-card p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Browse by Type */
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.category-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid #eeeeee;
+}
+
+.category-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.category-card p {
+    padding: 18px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #10101b;
+}
+/* WHY CHOOSE US SECTION */
+.why-choose-us {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.why-choose-us h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.section-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.benefit-card {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.benefit-card h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.benefit-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* EXPERIENCE SECTION */
+
+.experience {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 80px 8%;
+    background-color: #111;
+    color: #fff;
+}
+
+.experience-content {
+    flex: 1;
+}
+
+.experience-subtitle {
+    color: #c9a45c;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.experience-content h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.experience-content p {
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+.experience-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #c9a45c;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.experience-image {
+    flex: 1;
+}
+
+.experience-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+/* TESTIMONIALS SECTION */
+
+.testimonials {
+    padding: 80px 8%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.testimonial-subtitle {
+    color: #b58a4a;
+    font-size: 13px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    color: #171717;
+    margin-bottom: 80px;
+}
+
+.testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.testimonial-card {
+    position: relative;
+    background-color: #f1f1fa;
+    padding: 90px 30px 35px;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.client-image {
+    position: absolute;
+    top: -55px;
+    left: 25px;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fff;
+}
+
+.client-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.quote-mark {
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    font-size: 85px;
+    color: #b58a4a;
+    font-weight: bold;
+}
+
+.testimonial-text {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.stars {
+    color: #b58a4a;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.testimonial-card h4 {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.client-role {
+    font-size: 14px;
+    color: #666;
+}
+
+.testimonial-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.testimonial-dots span {
+    width: 12px;
+    height: 12px;
+    background-color: #d5d5e5;
+    border-radius: 50%;
+}
+
+.testimonial-dots .active {
+    width: 32px;
+    border-radius: 10px;
+    background-color: #b58a4a;
+}
+
+/* FINAL CALL TO ACTION SECTION */
+
+.final-cta {
+    padding: 100px 8%;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(
+            to right,
+            rgba(5, 5, 15, 0.95),
+            rgba(5, 5, 15, 0.55)
+        ),
+        url("images/hero-car.jpg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.cta-content {
+    max-width: 550px;
+}
+
+.cta-content h2 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cta-book-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #c9a45c;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.cta-service-btn {
+    display: inline-block;
+    padding: 14px 30px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* FOOTER SECTION */
+
+.footer {
+    background-color: #080b1b;
+    color: #fff;
+    padding: 65px 6% 25px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 45px;
+}
+
+.footer-brand h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.footer-brand h3 span {
+    color: #c9a45c;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #aaa;
+    max-width: 280px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.footer-column h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #c9a45c;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-legal a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 12px;
+}
+
+.footer-legal a:hover {
+    color: #c9a45c;
+}
